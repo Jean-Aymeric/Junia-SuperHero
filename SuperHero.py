@@ -27,3 +27,9 @@ class SuperHero(AgencyElement):
         for power in self.__powers:
             print(power.getName() + " ", end="")
         print(")")
+
+    def getPowers(self) -> str :
+        powers = ""
+        for power in self.__powers:
+            powers += power.getName() + ", "
+        return powers
